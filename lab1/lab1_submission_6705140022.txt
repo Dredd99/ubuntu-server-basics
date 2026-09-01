@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140022
+timestamp: 2026-09-01T07:33:03Z
+hostname: ubuntu
+---[user: getent passwd]---
+liam529:x:1001:1002::/home/liam529:/bin/sh
+---[group: getent group]---
+research:x:1001:liam529
+---[user-in-group: id]---
+uid=1001(liam529) gid=1002(liam529) groups=1002(liam529),1001(research)
+---[file stat: home file mode/owner]---
+/home/liam529/report_5094.txt mode=640 owner=liam529 group=research
+---[sshd effective config]---
+port 2403
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 652b457f20c2f514939b06b960d28d845d0863f8888f500d6952cc597c5b1778
+===END LAB1 SUBMISSION===
